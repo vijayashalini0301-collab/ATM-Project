@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deposit Money</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banking-page">
+
+        <div class="banking-card">
+
+            <div class="banking-icon">💵</div>
+
+            <h1>Deposit Money</h1>
+
+            <p class="banking-subtitle">
+                Add money to your ATM account
+            </p>
+
+            <form action="deposit" method="post">
+
+                <label>Enter Amount</label>
+
+                <div class="amount-box">
+                    <span>₹</span>
+
+                    <input type="number"
+                           name="amount"
+                           placeholder="Enter amount"
+                           min="1"
+                           required>
+                </div>
+
+                <button type="submit" class="banking-btn">
+                    DEPOSIT MONEY
+                </button>
+
+            </form>
+
+            <a href="home.html" class="back-link">
+                ← Back to ATM Menu
+            </a>
+
+            <p class="secure-text">
+                🔒 Secure Banking Transaction
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

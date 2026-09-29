@@ -1,0 +1,613 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #071e3d, #126e82);
+}
+
+/* Main Login Page */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 0;
+}
+
+/* Left Section */
+
+.login-info {
+    width: 430px;
+    min-height: 520px;
+    padding: 60px 45px;
+    background: linear-gradient(160deg, #0b3d91, #126e82);
+    color: white;
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.atm-logo {
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+.login-info h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.login-info h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.login-info p {
+    line-height: 1.7;
+    font-size: 15px;
+    color: #e8f6ff;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.features span {
+    font-size: 14px;
+    background: rgba(255,255,255,0.12);
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+/* Right Login Box */
+
+.login-box {
+    width: 400px;
+    min-height: 520px;
+    padding: 55px 45px;
+    background: white;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    color: #123c69;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* Labels */
+
+.login-box label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+/* Input Box */
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 0 12px;
+    transition: 0.3s;
+}
+
+.input-box span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 5px;
+    font-size: 14px;
+}
+
+.input-box:focus-within {
+    border-color: #126e82;
+    box-shadow: 0 0 8px rgba(18,110,130,0.2);
+}
+
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #0b3d91, #126e82);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(11,61,145,0.3);
+}
+
+/* Secure Text */
+
+.secure-text {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+
+/* Other ATM Pages */
+
+.atm-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.atm-card {
+    background: white;
+    width: 430px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.atm-card h2 {
+    color: #123c69;
+    margin-bottom: 10px;
+}
+
+.atm-card h3 {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.atm-card label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.atm-card input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.atm-card button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #123c69;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.atm-card button:hover {
+    background: #0b2948;
+}
+
+.atm-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #123c69;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Home Menu */
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.menu button {
+    margin-top: 0;
+}
+
+.menu .logout {
+    background: #777;
+}
+
+.secure {
+    color: #777;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+/* Statement */
+
+.statement-card {
+    width: 90%;
+    max-width: 1000px;
+    overflow-x: auto;
+}
+
+.statement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.statement-table th {
+    background: #123c69;
+    color: white;
+    padding: 12px;
+}
+
+.statement-table td {
+    padding: 11px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.statement-table tr:hover {
+    background: #f2f6fa;
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-info {
+        width: 400px;
+        min-height: auto;
+        border-radius: 25px 25px 0 0;
+        padding: 35px;
+    }
+
+    .login-box {
+        width: 400px;
+        border-radius: 0 0 25px 25px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .login-info,
+    .login-box {
+        width: 100%;
+    }
+
+    .login-page {
+        padding: 15px;
+    }
+}
+/* =========================
+   ATM DASHBOARD
+   ========================= */
+
+.atm-dashboard {
+    min-height: 100vh;
+    padding: 30px 50px;
+    background: #f4f7fb;
+}
+
+/* Header */
+
+.dashboard-header {
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(135deg, #0b3d91, #126e82);
+    color: white;
+    padding: 25px 35px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.dashboard-header p {
+    margin-top: 8px;
+    opacity: 0.85;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info span {
+    display: block;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.user-info strong {
+    font-size: 18px;
+}
+
+
+/* Main Content */
+
+.dashboard-content {
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.dashboard-content h2 {
+    color: #123c69;
+    margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+/* Service Grid */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* Service Card */
+
+.service-card {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid #e5e9ef;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    border-color: #126e82;
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #123c69;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 42px;
+}
+
+.service-card span {
+    display: inline-block;
+    margin-top: 15px;
+    color: #126e82;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Logout Card */
+
+.logout-card {
+    border-left: 4px solid #777;
+}
+
+.logout-card:hover {
+    border-color: #777;
+}
+
+
+/* Security Message */
+
+.security-message {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 16px;
+    background: #eaf6f8;
+    color: #126e82;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* Dashboard Responsive */
+
+@media (max-width: 900px) {
+
+    .atm-dashboard {
+        padding: 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-header {
+        padding: 22px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .user-info {
+        text-align: center;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
+   DEPOSIT / WITHDRAW PAGE
+   ========================= */
+
+.banking-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.banking-card {
+    width: 430px;
+    background: white;
+    padding: 45px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.banking-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaf6f8;
+    border-radius: 50%;
+    font-size: 38px;
+}
+
+.banking-card h1 {
+    color: #123c69;
+    margin-bottom: 8px;
+}
+
+.banking-subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.banking-card label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.amount-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.amount-box span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #126e82;
+}
+
+.amount-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.amount-box:focus-within {
+    border-color: #126e82;
+    box-shadow: 0 0 8px rgba(18,110,130,0.2);
+}
+
+.banking-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #0b3d91, #126e82);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banking-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(11,61,145,0.3);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #126e82;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

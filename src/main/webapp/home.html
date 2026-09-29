@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ATM Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="atm-dashboard">
+
+        <!-- Header -->
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>🏧 ATM MANAGEMENT SYSTEM</h1>
+                <p>Secure & Simple Banking</p>
+            </div>
+
+            <div class="user-info">
+                <span>Welcome</span>
+                <strong>Shalini</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Main Content -->
+
+        <div class="dashboard-content">
+
+            <h2>ATM Services</h2>
+
+            <p class="dashboard-subtitle">
+                Select an option to continue
+            </p>
+
+
+            <!-- Service Cards -->
+
+            <div class="service-grid">
+
+                <div class="service-card"
+                     onclick="window.location.href='balance'">
+
+                    <div class="service-icon">💰</div>
+
+                    <h3>Balance Enquiry</h3>
+
+                    <p>Check your available balance</p>
+
+                    <span>View Balance →</span>
+
+                </div>
+
+
+                <div class="service-card"
+                     onclick="window.location.href='deposit.html'">
+
+                    <div class="service-icon">💵</div>
+
+                    <h3>Deposit</h3>
+
+                    <p>Deposit money into your account</p>
+
+                    <span>Deposit Money →</span>
+
+                </div>
+
+
+                <div class="service-card"
+                     onclick="window.location.href='withdraw.html'">
+
+                    <div class="service-icon">💸</div>
+
+                    <h3>Withdraw</h3>
+
+                    <p>Withdraw money from your account</p>
+
+                    <span>Withdraw Money →</span>
+
+                </div>
+
+
+                <div class="service-card"
+                     onclick="window.location.href='statement'">
+
+                    <div class="service-icon">📋</div>
+
+                    <h3>Mini Statement</h3>
+
+                    <p>View your transaction history</p>
+
+                    <span>View Statement →</span>
+
+                </div>
+
+
+                <div class="service-card"
+                     onclick="window.location.href='change-pin.html'">
+
+                    <div class="service-icon">🔐</div>
+
+                    <h3>Change PIN</h3>
+
+                    <p>Update your ATM PIN securely</p>
+
+                    <span>Change PIN →</span>
+
+                </div>
+
+
+                <div class="service-card logout-card"
+                     onclick="window.location.href='index.html'">
+
+                    <div class="service-icon">🚪</div>
+
+                    <h3>Logout</h3>
+
+                    <p>Exit from your ATM account</p>
+
+                    <span>Logout →</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security Message -->
+
+            <div class="security-message">
+                🔒 Your transactions are protected with secure banking.
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
